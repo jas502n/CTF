@@ -1,4 +1,4 @@
-#zip Ñ¹Ëõ°üÎ±¼ÓÃÜ  Linux Ö±½Ó binwalk -e ¼´¿É ¼´¿É½âÃÜ
+#zip å‹ç¼©åŒ…ä¼ªåŠ å¯†  Linux ç›´æ¥ binwalk -e å³å¯ å³å¯è§£å¯†
 
 
 -------------------------------------------------------------------------------------------------------
@@ -29,12 +29,12 @@ DECIMAL   	HEX       	DESCRIPTION
 
 #root@test:~/2017-ZCTF-CODE/Misc/300pt-Russian-zips/test# tree flag
 flag
-©À©¤©¤ level.dat
-©À©¤©¤ region
-©¦?? ©À©¤©¤ r.0.0.mca
-©¦?? ©À©¤©¤ r.0.-1.mca
-©¦?? ©À©¤©¤ r.-1.0.mca
-©¦?? ©¸©¤©¤ r.-1.-1.mca
-©¸©¤©¤ session.lock
+â”œâ”€â”€ level.dat
+â”œâ”€â”€ region
+â”‚?? â”œâ”€â”€ r.0.0.mca
+â”‚?? â”œâ”€â”€ r.0.-1.mca
+â”‚?? â”œâ”€â”€ r.-1.0.mca
+â”‚?? â””â”€â”€ r.-1.-1.mca
+â””â”€â”€ session.lock
 
 1 directory, 6 files
