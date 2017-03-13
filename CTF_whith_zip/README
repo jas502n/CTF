@@ -1,0 +1,40 @@
+#zip 压缩包伪加密  Linux 直接 binwalk -e 即可 即可解密
+
+
+-------------------------------------------------------------------------------------------------------
+#root@test:~/2017-ZCTF-CODE/Misc/300pt-Russian-zips/test# binwalk -e 30538635-2d26-415a-a567-6948699cc369.zip 
+
+DECIMAL   	HEX       	DESCRIPTION
+-------------------------------------------------------------------------------------------------------
+0         	0x0       	Zip archive data, at least v1.0 to extract, name: "flag/"  
+35        	0x23      	Zip archive data, at least v2.0 to extract, compressed size: 331, uncompressed size: 326, name: "flag/level.dat"  
+84        	0x54      	gzip compressed data, from FAT filesystem (MS-DOS, OS/2, NT), NULL date: Thu Jan  1 08:00:00 1970
+410       	0x19A     	Zip archive data, at least v1.0 to extract, name: "flag/region/"  
+452       	0x1C4     	Zip archive data, at least v2.0 to extract, compressed size: 114718, uncompressed size: 270336, name: "flag/region/r.-1.-1.mca"  
+115223    	0x1C217   	Zip archive data, at least v2.0 to extract, compressed size: 117814, uncompressed size: 270336, name: "flag/region/r.-1.0.mca"  
+233089    	0x38E81   	Zip archive data, at least v2.0 to extract, compressed size: 117039, uncompressed size: 270336, name: "flag/region/r.0.-1.mca"  
+350180    	0x557E4   	Zip archive data, at least v2.0 to extract, compressed size: 113813, uncompressed size: 270336, name: "flag/region/r.0.0.mca"  
+464044    	0x714AC   	Zip archive data, at least v2.0 to extract, compressed size: 10, uncompressed size: 8, name: "flag/session.lock"  
+464915    	0x71813   	End of Zip archive 
+
+
+-------------------------------------------------------------------------------------------------------
+
+#root@test:~/2017-ZCTF-CODE/Misc/300pt-Russian-zips/test# ls
+30538635-2d26-415a-a567-6948699cc369.zip  54  flag  level.dat.zip  r.0.0.mca.zip  r.0.-1.mca.zip  r.-1.0.mca.zip  r.-1.-1.mca.zip  session.lock.zip
+
+
+-------------------------------------------------------------------------------------------------------
+
+
+#root@test:~/2017-ZCTF-CODE/Misc/300pt-Russian-zips/test# tree flag
+flag
+├── level.dat
+├── region
+│?? ├── r.0.0.mca
+│?? ├── r.0.-1.mca
+│?? ├── r.-1.0.mca
+│?? └── r.-1.-1.mca
+└── session.lock
+
+1 directory, 6 files
