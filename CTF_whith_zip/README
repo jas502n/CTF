@@ -1,4 +1,41 @@
 #zip 压缩包伪加密  Linux 直接 binwalk -e 即可 即可解密
+安装命令：apt-get install binwalk
+-------------------------------------------------------------------------------------------------------
+binwalk -h
+
+
+Binwalk v1.0
+Craig Heffner, http://www.devttys0.com
+
+Usage: binwalk [OPTIONS] [FILE1] [FILE2] [FILE3] ...
+
+	-o, --offset=<int>            Start scan at this file offset
+	-l, --length=<int>            Number of bytes to scan
+	-b, --align=<int>             Set byte alignment [default: 1]
+	-m, --magic=<file>            Specify an alternate magic file to use
+	-i, --include=<filter>        Include matches that are normally excluded and that have <filter> in their description
+	-x, --exclude=<filter>        Exclude matches that have <filter> in their description
+	-y, --search=<filter>         Only search for matches that have <filter> in their description
+	-g, --grep=<text>             Grep results for the specified text
+	-R, --raw-bytes=<string>      Search for a sequence of raw bytes instead of using the default magic signatures
+	-f, --file=<file>             Log results to file
+	-D, --dd=<type:ext[:cmd]>     Extract entries whose descriptions match <type>, give them file extension <ext>, and execute <cmd>
+	-e, --extract=[file]          Automatically extract known file types. Load rules from file, if specified.
+	-r, --rm                      Cleanup extracted files and zero-size files
+	-d, --delay                   Delay file extraction for files with known footers
+	-a, --all                     Include all short signatures
+	-I, --show-invalid            Show results marked as invalid
+	-A, --opcodes                 Scan for executable code
+	-C, --cast                    Cast file contents as various data types
+	-k, --keep-going              Show all matching results at a given offset, not just the first one
+	-q, --quiet                   Supress output to stdout
+	-v, --verbose                 Be verbose (specify twice for very verbose)
+	-u, --update                  Update magic signature files
+	-h, --help                    Show help output
+
+-------------------------------------------------------------------------------------------------------
+
+
 
 
 -------------------------------------------------------------------------------------------------------
