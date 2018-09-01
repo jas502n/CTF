@@ -1,5 +1,6 @@
 
 ### 某站点图片阅览器
+![](./un.jpg)
 ```
 <?php 
 error_reporting(0); 
@@ -25,8 +26,7 @@ chmod 777 un.php
 
 # Writeup:
 
-![](./un.jpg)
-payload:
+Payload:
 
 ```
 <?php
