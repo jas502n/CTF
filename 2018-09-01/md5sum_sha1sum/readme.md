@@ -41,6 +41,9 @@ elseif($a != $b && md5($a) == md5($b))
 # sha1sum-same
 
 利用shattered-1.pdf和shattered-2.pdf文件生成相同sha1sum值相同的文件file1和file2，sha1sum值为f92d74e3874587aaf443d1db961d4e26dde13e9c
+
+ps: 因为pdf文件内容虽然内容不相同，但是sha1值相同，所以为了方便，生成文件比较小的file1和file2
+
 ```
 dd bs=1 count=320 <shattered-1.pdf| sha1sum
 记录了320+0 的读入
